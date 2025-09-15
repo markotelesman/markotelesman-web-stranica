@@ -197,3 +197,9 @@ p + p {
   width: 70%;
   border-radius: 50px;
 }
+
+.odlomak-naslov {
+  font-size: 21px;
+  line-height: 1.6; /* Povećava prored za bolju čitljivost */
+  margin-bottom: 20px; /* Razmak između odlomaka */
+}
