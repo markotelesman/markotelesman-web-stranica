@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link href="./css/main.css" rel="stylesheet" />
-        <title>Marko Telešman - Night Sky Naratives</title></head>
+        <title>Marko Telešman - Night Sky Naratives</title>
+    </head>
+        
         <body>
 
-            <main class="glavni-kontejner">
+           <main class="glavni-kontejner">
 
-            <header class="glavna-slika">
-                <span class="naslov-preko-slike">Night Sky Narratives</span>
-            </header>
+                <nav class="izbornik">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/Logo 2.5.png" alt="Night Sky Narratives Logo" class="glavni-logo">
+                    </a>
+                    <div class="nav-linkovi">
+                        <a href="index.html">Početna</a>
+                        <a href="text.html">Scribus</a>
+                        <a href="slika.html" class="active">Photoshop</a>
+                        <a href="grafika.html">Inkscape</a>
+                        <a href="zvuk.html">Audacity</a>
+                        <a href="video.html">DaVinci Resolve</a>
+                    </div>
+                </nav>
 
-            <nav class="izbornik">
-                <a href="index.html">Početna</a>
-                <a href="text.html">Tekst</a>
-                <a href="slika.html">Slika</a>
-                <a href="grafika.html">Grafika</a>
-                <a href="zvuk.html">Zvuk</a>
-                <a href="video.html">Video</a>
-            </nav>
+                <header class="zaglavlje-slika">
+                    <div class="zaglavlje-sadrzaj">
+                        <h1 class="zaglavlje-naslov">Night Sky Narratives</h1>
+                    </div>
+                </header>
 
-            <section class="tekst-sadrzaj">
-                <h1 class="glavni-naslov">Slika</h1>
-  
-                <hr class="separator"> <p class="odlomak">Fotografija je obrađena u programu Photoshop</p>
-  
-                <hr class="separator"> <p class="odlomak">
-                    Ova fotografija je <b>kompozit</b>, odnosno digitalna montaža sastavljena od više zasebnih fotografija.
-                    Proces je započeo <b>slaganjem</b> (<i>eng.stacking</i>) više stotina fotografija snimljenih širokokutnim objektivom.
-                    Cilj je bio dobiti što čišću snimku Mliječne staze, s minimalnom razinom digitalnog <b>šuma</b>.
-                    Sve su fotografije snimljene s istim postavkama: žarišna duljina 14 mm, otvor blende f/3.2, ISO 3200 i ekspozicija od 8 sekundi.
-                    </p>
-                    <p class="odlomak">
-                    Nakon slaganja, uslijedila je detaljna digitalna obrada: podešena je <b>temperatura boje</b>, korigirana je <b>ekspozicija</b> i <b>kontrast</b> te su dorađeni <b>svijetli tonovi</b>, <b>sjene</b> i <b>tamni</b> dijelovi slike. 
-                    Također, precizno su podešene <b>krivulje</b> (<i>eng.Curves</i>) za postizanje željenog tonaliteta i balansa boja.
-                    </p>
-                    <p class="odlomak">
-                    Kako bih u konačni prikaz uključio sve meteore snimljene tijekom noći, svaku fotografiju s meteorom dodao sam kao zaseban <b>sloj</b> (<i>eng.layer</i>). 
-                    Pomoću <b>maski</b> (<i>eng.masks</i>) na tim slojevima, zatamnjeni su svi dijelovi osim samog traga meteora. 
-                    Da bi se dodatno istaknuo, njegova je svjetlina selektivno pojačana.
-                    </p>
-                    <p class="odlomak">
-                    U završnom koraku dodan je <b>prednji plan</b> (<i>eng.foreground</i>) - kamena nastamba, koja je također stvorena slaganjem više fotografija radi optimalne oštrine i detalja. 
-                    I ovdje je korištena maska kako bi se uklonilo originalno nebo s fotografije nastambe. 
-                    Time je omogućeno da se umjesto njega vidi prethodno pripremljena pozadina s Mliječnom stazom i meteorima, čime su svi elementi spojeni u jedinstvenu cjelinu.
-                    </p>
-            </section>
+                <section class="tekst-sadrzaj">
+                    <h1 class="glavni-naslov">Fotografija</h1>
+    
+                    <hr class="separator"> 
+                        <p class="odlomak-index">Fotografija je obrađena u programu Photoshop</p>
+    
+                    <hr class="separator"> <p class="odlomak">
+                        Ova fotografija je <b>kompozit</b>, odnosno digitalna montaža sastavljena od više zasebnih fotografija.
+                        Proces je započeo <b>slaganjem</b> (<i>eng.stacking</i>) više stotina fotografija snimljenih širokokutnim objektivom.
+                        Cilj je bio dobiti što čišću snimku Mliječne staze, s minimalnom razinom digitalnog <b>šuma</b>.
+                        Sve su fotografije snimljene s istim postavkama: žarišna duljina 14 mm, otvor blende f/3.2, ISO 3200 i ekspozicija od 8 sekundi.
+                        </p>
+                        <p class="odlomak">
+                        Nakon slaganja, uslijedila je detaljna digitalna obrada: podešena je <b>temperatura boje</b>, korigirana je <b>ekspozicija</b> i <b>kontrast</b> te su dorađeni <b>svijetli tonovi</b>, <b>sjene</b> i <b>tamni</b> dijelovi slike. 
+                        Također, precizno su podešene <b>krivulje</b> (<i>eng.Curves</i>) za postizanje željenog tonaliteta i balansa boja.
+                        </p>
+                        <p class="odlomak">
+                        Kako bih u konačni prikaz uključio sve meteore snimljene tijekom noći, svaku fotografiju s meteorom dodao sam kao zaseban <b>sloj</b> (<i>eng.layer</i>). 
+                        Pomoću <b>maski</b> (<i>eng.masks</i>) na tim slojevima, zatamnjeni su svi dijelovi osim samog traga meteora. 
+                        Da bi se dodatno istaknuo, njegova je svjetlina selektivno pojačana.
+                        </p>
+                        <p class="odlomak">
+                        U završnom koraku dodan je <b>prednji plan</b> (<i>eng.foreground</i>) - kamena nastamba, koja je također stvorena slaganjem više fotografija radi optimalne oštrine i detalja. 
+                        I ovdje je korištena maska kako bi se uklonilo originalno nebo s fotografije nastambe. 
+                        Time je omogućeno da se umjesto njega vidi prethodno pripremljena pozadina s Mliječnom stazom i meteorima, čime su svi elementi spojeni u jedinstvenu cjelinu.
+                        </p>
+                    </section>
 
-            <figure class="slika-kontejner">
-                <img src="images/DSC_6730.jpg" alt="Kratki opis prve slike" class="slika-slika">
-                <figcaption class="opis-slike">
-                    Fotografija 1. Prednji plan 
-                </figcaption>
-            </figure>
+                    <div class="galerija-kontejner">
+                        <figure class="slika-kontejner">
+                            <img src="images/DSC_6730.jpg" alt="Kratki opis prve slike" class="slika-slika">
+                            <figcaption class="opis-slike">
+                                Fotografija 1. Prednji plan 
+                            </figcaption>
+                        </figure>
 
-            <figure class="slika-kontejner">
-                <img src="images/DSC_6790.jpg" alt="Kratki opis druge slike" class="slika-slika">
-                <figcaption class="opis-slike">
-                    Fotografija 2. Meteor
-                </figcaption>
-            </figure>
+                        <figure class="slika-kontejner">
+                            <img src="images/DSC_6790.jpg" alt="Kratki opis druge slike" class="slika-slika">
+                            <figcaption class="opis-slike">
+                                Fotografija 2. Meteor
+                            </figcaption>
+                        </figure>
 
-            <figure class="slika-kontejner">
-                <img src="images/DSC_7017.jpg" alt="Kratki opis treće slike" class="slika-slika">
-                <figcaption class="opis-slike">
-                    Fotografija 3. Mliječna staza jedna fotografija
-                </figcaption>
-            </figure>
+                        <figure class="slika-kontejner">
+                            <img src="images/DSC_7017.jpg" alt="Kratki opis treće slike" class="slika-slika">
+                            <figcaption class="opis-slike">
+                                Fotografija 3. Mliječna staza jedna fotografija
+                            </figcaption>
+                        </figure>
 
-            <figure class="slika-kontejner">
-                <img src="images/MW 14mm f3.2 8sec v.4 copy.jpg" alt="Kratki opis četvrte slike" class="slika-slika">
-                <figcaption class="opis-slike">
-                    Fotografija 4. Finalna slika 
-                </figcaption>
-            </figure>
-
-            </main> <footer class="potpis">
+                        <figure class="slika-kontejner">
+                            <img src="images/MW 14mm f3.2 8sec v.4 copy.jpg" alt="Kratki opis četvrte slike" class="slika-slika">
+                            <figcaption class="opis-slike">
+                                Fotografija 4. Finalna slika 
+                            </figcaption>
+                        </figure>
+                    </div>
+            </main> 
+            
+            <footer class="potpis">
             Stranicu izradio: Marko Telešman
             </footer>
-
-</body>
+        
+        <body>
 </html>

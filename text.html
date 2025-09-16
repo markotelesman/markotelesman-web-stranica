@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link href="./css/main.css" rel="stylesheet" />
         <title>Marko Telešman - Night Sky Naratives</title></head>
+        
         <body>
 
             <main class="glavni-kontejner">
 
-            <header class="glavna-slika">
-                <span class="naslov-preko-slike">Night Sky Narratives</span>
-            </header>
+                <nav class="izbornik">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/Logo 2.5.png" alt="Night Sky Narratives Logo" class="glavni-logo">
+                    </a>
+                    <div class="nav-linkovi">
+                        <a href="index.html">Početna</a>
+                        <a href="text.html" class="active">Scribus</a>
+                        <a href="slika.html">Photoshop</a>
+                        <a href="grafika.html">Inkscape</a>
+                        <a href="zvuk.html">Audacity</a>
+                        <a href="video.html">DaVinci Resolve</a>
+                    </div>
+                </nav>
 
-            <nav class="izbornik">
-                <a href="index.html">Početna</a>
-                <a href="text.html">Tekst</a>
-                <a href="slika.html">Slika</a>
-                <a href="grafika.html">Grafika</a>
-                <a href="zvuk.html">Zvuk</a>
-                <a href="video.html">Video</a>
-            </nav>
+                <header class="zaglavlje-slika">
+                    <div class="zaglavlje-sadrzaj">
+                        <h1 class="zaglavlje-naslov">Night Sky Narratives</h1>
+                    </div>
+                </header>
 
-            <section class="tekst-sadrzaj">
-                <h1 class="glavni-naslov">Plakat</h1>
+                <section class="tekst-sadrzaj">
+                    <h1 class="glavni-naslov">Plakat</h1>
   
-                <hr class="separator"> <p class="odlomak">Plakat je rađen u alatu Scribus.</p>
+                    <hr class="separator"> <p class="odlomak-index">Plakat je dizajniran i pripremljen za tisak u alatu Scribus.</p>
   
-                <hr class="separator"> <p class="odlomak">Nakon što sam otvorio Scribus koristio sam <b><i>Image Frame</i></b> kako bi umetnuo pozadinsku sliku. 
-                    Smanjio sam  sam opacity na 80% kako bi na nju mogao dalje stavljati text koji će biti u prvom planu. </p>
-                    <p class="odlomak">Dodao sam više <b><i>text frameova</i></b> za sav potreban text. Unio sam sav potreban text te ga pomoću <b><i>Edit Text with Story Editor</i></b> uredio. 
-                    Za kraj samo koristio još jedan <b><i>Image Frame</i></b> kako bi dodao logo na sam plakat. S obzirom da je logo bio mnogo veći od veličine framea kojeg sam zadao morao sam koristiti opciju <b><i>Adjust Image to Frame</i></b>.</p>
-            </section>
-            <img src="images/Plakat-page001.jpeg" class="text-slika">
+                    <hr class="separator"> 
+                    <p class="odlomak">
+                        Nakon otvaranja novog dokumenta u Scribusu, prvi korak bio je postavljanje pozadinske slike. Za to je korišten alat <b>Image Frame</b>, kojim je definiran okvir preko cijele stranice. Nakon umetanja slike, njezina je <b>prozirnost</b> (<i>eng. opacity</i>) smanjena na 80% kako bi tekst koji dolazi preko nje bio čitljiviji.
+                    </p>
+                    <p class="odlomak">
+                        Za unos teksta korišteni su višestruki <b>Text Frameovi</b>, koji su raspoređeni na željene pozicije na plakatu. Sav tekstualni sadržaj unesen je i detaljno uređen pomoću alata <b>Story Editor</b>, gdje su podešeni font, veličina i poravnanje teksta.
+                    </p>
+                    <p class="odlomak">
+                        U završnoj fazi, na plakat je dodan prethodno izrađen logo. Ponovno je korišten <b>Image Frame</b> za definiranje prostora za logo. Budući da je originalna veličina loga bila veća od okvira, korištena je opcija <b>Adjust Image to Frame</b> kako bi se slika automatski skalirala i savršeno uklopila u zadani okvir, čime je dovršen dizajn plakata.
+                    </p>
+                </section>
+
+                <img src="images/Plakat-page001.jpeg" class="text-slika">
+
+            </main>
             
-            </main> <footer class="potpis">
+            <footer class="potpis">
             Stranicu izradio: Marko Telešman
             </footer>
 
-</body>
+        </body>
+        
 </html>

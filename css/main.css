@@ -1,4 +1,4 @@
-/* === TEMELJNI STILOVI === */
+/* === TEMELJNI STILOVI I POZADINA === */
 * {
   margin: 0;
   padding: 0;
@@ -6,200 +6,212 @@
 }
 
 body {
-  font-family: 'Mandali', sans-serif;
-  /*background: linear-gradient(rgba(22, 24, 67, 1), rgba(80, 103, 215, 1));*/
-  background: linear-gradient(#1B263B, #415A77);
-  background-attachment: fixed;
-  color: rgba(230, 234, 255, 1);
-  
-  /* FLEXBOX ZA CENTRIRANJE */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  font-family: 'Lato', sans-serif;
+  background-color: #0d131a;
+  background-image: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  color: #E6EAFF;
 }
 
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-image: url('../images/stardust.png');
-  z-index: -1;
-  animation: twinkle 15s infinite linear;
-}
-
-@keyframes twinkle{
-  0% {opacity: 0.3;}
-  50% {opacity: 0.9;}
-  100% {opacity: 0.3;}
-}
-/* === GLAVNI KONTEJNER === */
-.glavni-kontejner {
-  width: 804px; /* Širina središnjeg dijela */
-  background: rgba(217, 217, 217, 0.2); /* Prozirna pozadina */
-  /*margin-top: 50px; /* Udaljenost od vrha stranice */
-  
-  margin-bottom: 50px; /* Udaljenost od dna (potpisa) */
-  border-bottom-left-radius: 10px; /* Lagano zaobljeni rubovi */
-  border-bottom-right-radius: 10px;
-  overflow: hidden; /* Osigurava da sadržaj ostane unutar zaobljenih rubova */
-}
-
-
-/* === 1. SEKCIJA: GLAVNA SLIKA I NASLOV === */
-.glavna-slika {
-  width: 95%;
-  margin: auto;
-  height: 450px; /* Visina slike */
-  background: url('../images/Star\ trails-2.jpg'); /* Ovdje stavite putanju do vaše glavne slike */
-  background-size: cover;
-  background-position: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;  
-  /* Za pozicioniranje teksta preko slike */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.naslov-preko-slike {
-  font-size: 48px;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-/* === 2. SEKCIJA: IZBORNIK === */
 .izbornik {
-  width: 95%;
-  margin: 30px auto 0 auto;
   display: flex;
-  justify-content: space-around;
-  gap: 15px;
-  padding: 10px 0;
-  border-radius: 15px;
-  background-color: rgba(38, 70, 107, 0.4);
+  justify-content: space-between;
+  align-items: center; 
+  padding: 15px 40px; 
+  border-bottom: 1px solid rgba(118, 171, 174, 0.2);
 }
 
 .izbornik a {
-  color: rgba(230, 234, 255, 1);
+  color: #E6EAFF;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .izbornik a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #76ABAE;
+  color: #1B263B;
 }
 
+.izbornik a.active {
+  color: #76ABAE;
+  text-decoration: underline;
+}
 
-/* === 3. SEKCIJA: GLAVNI TEKST === */
+/* === ZAGLAVLJE === */
+.zaglavlje-slika {
+  height: 40vh; 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Star trails-2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.zaglavlje-naslov {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 5vw, 90px); 
+  color: #FFFFFF;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  margin-bottom: 5vh;
+}
+
+.nav-linkovi {
+    display: flex;
+    gap: 30px; 
+}
+
+/* === GLAVNI KONTEJNER === */
+.glavni-kontejner {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+  background: #1B263B;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  position: relative; 
+  padding-top: 0px; 
+  padding-bottom: 40px;
+}
+
+/* === LOGO === */
+.logo-link {
+  display: block;
+}
+
+.glavni-logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #76ABAE;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.glavni-logo:hover {
+  transform: scale(1.08);
+}
+
+/* === SADRŽAJ UNUTAR KONTEJNERA === */
 .tekst-sadrzaj {
-  padding: 40px; /* Unutarnji razmak da tekst ne bude zalijepljen za rub */
-  text-align: center; /* Centriranje teksta */
+  padding: 40px;
+  text-align: left;
 }
 
 .glavni-naslov {
-  font-size: 32px;
-  margin-bottom: 30px; /* Razmak ispod glavnog naslova */
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  margin-top: 40px;
 }
 
 .odlomak {
-  font-size: 20px;
-  line-height: 1.6; /* Povećava prored za bolju čitljivost */
-  margin-bottom: 20px; /* Razmak između odlomaka */
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #cdd3e8;
+  text-align: justify;
 }
 
-
-/* === 4. SEKCIJA: POTPIS === */
-.potpis {
-  padding: 10px;
-  font-size: 16px;
-  color: rgba(230, 234, 255, 0.7);
+.odlomak-index {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #cdd3e8;
   text-align: center;
-  width: 90%;
-  max-width: 350px;
-  margin: 10px auto;
-  background-color: rgba(26, 56, 90, 0.4);
-  border-radius: 10px;
 }
-
-/* === STIL ZA HORIZONTALNE LINIJE === */
-/* Dodajte ovo na kraj vašeg main.css filea */
 
 .separator {
-  border: none; /* Uklanjamo standardni obrub */
-  height: 2px; /* Visina linije */
-  background-color: rgba(230, 234, 255, 0.3); /* Ista boja kao tekst, ali s 30% prozirnosti */
-  margin: 30px 0; /* Stvara vertikalni razmak od 30px iznad i ispod linije */
+  border: none;
+  height: 1px;
+  background-color: #76ABAE;
+  opacity: 0.3;
+  margin: 60px auto;
+  width: 80%;
 }
 
+/* === POTPIS === */
+.potpis {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(230, 234, 255, 0.6);
+  text-align: center;
+}
+
+/* === Stilovi za specifične elemente === */
 .text-slika {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin-top: 40px;
-  border: none;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 1px solid rgba(118, 171, 174, 0.2);
 }
 
-p + p {
-  margin-top: 20px;
+.galerija-kontejner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 40 px;
 }
 
 .slika-kontejner {
-  margin-top: 40px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .slika-slika {
   display: block;
-  width: 60%;
+  max-width: 90%;
   height: auto;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.opis-slike {
-  width: 70%;
-  margin: 15px auto 0 auto;
-  text-align: center;
-  font-style: italic;
-  font-size: 16px;
-  color: rgba(230, 234, 255, 0.85);
-  line-height: 1.5;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 1px solid rgba(118, 171, 174, 0.2);
 }
 
 .logo {
   display: block;
-  width: 70%;
+  max-width: 50%;
   height: auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
 }
 
 .audio-kontejner {
-  margin-top: 30px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  margin: 30px 0;
 }
 
-.audio-kontejner audio {
-  width: 70%;
-  border-radius: 50px;
+.opis-slike {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cdd3e8;
+  text-align: center;
 }
 
-.odlomak-naslov {
-  font-size: 21px;
-  line-height: 1.6; /* Povećava prored za bolju čitljivost */
-  margin-bottom: 20px; /* Razmak između odlomaka */
+.video-kontejner {
+  position: relative;
+  padding-bottom: 56.25%; /* Omjer stranica 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+.video-kontejner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
