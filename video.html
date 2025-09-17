@@ -42,18 +42,26 @@
     
                     <hr class="separator">
                     <p class="odlomak">
-                        Produkcija je započela snimanjem video prezentacije o <b>astronomskom događaju</b>. Nakon snimanja glavnog materijala, prikupljene su i pripremljene dodatne fotografije te audio zapis koji će poslužiti kao pozadinska glazba.
+                        Produkcija je započela snimanjem video prezentacije, nakon čega su prikupljene dodatne fotografije i audio zapis za pozadinsku glazbu. U prvom koraku postprodukcije, sav je materijal uvezen u <b>DaVinci Resolve</b>.
                     </p>
                     <p class="odlomak">
-                        Početni korak u postprodukciji bio je uvoz cjelokupnog materijala u <b>DaVinci Resolve</b>. U fazi <b>montaže</b>, sirovi video zapis je pregledan i skraćen na ključne segmente koji su zatim složeni na <b>vremensku crtu</b> (<i>eng. timeline</i>). Preko osnovnog videa dodane su pripremljene fotografije kao vizualni dodatak koji prati naraciju. Kako bi se osigurao gladak i profesionalan tijek, između različitih kadrova i fotografija umetnuti su suptilni <b>prijelazi</b> (<i>eng. transitions</i>).
+                        U fazi montaže, na Edit stranici, sirovi video zapis skraćen je na ključne segmente pomoću alata <b>Blade Edit Mode</b>. 
+                        Segmenti su zatim raspoređeni na vremensku crtu (timeline) na dvije video trake. Na gornjoj traci privremeno je isključena vidljivost (<b>Disable Video track</b>) kako bi se na njezino mjesto umetnule pripremljene fotografije.
                     </p>
                     <p class="odlomak">
-                        Nakon slaganja vizuala, dodan je audio zapis kao pozadinska glazba, a njegova <b>glasnoća</b> je pažljivo prilagođena kako ne bi ometala naraciju. Za konačni izgled, na početak i kraj videa dodani su grafički elementi – uvodni naslov i odjavni logo na kojem je primjenjen <b>transform</b>, čime je projekt vizualno zaokružen.
-                        
+                        Za postizanje glatkih prijelaza između videa i fotografija, korišten je efekt iz <b>Effects -> Toolbox -> Video Transitions -> Cross Dissolve</b>. 
+                        Tekstualni sadržaj dodan je na više načina: na jednu fotografiju umetnut je teks pomoću <b>Effects -> Toolbox -> Titles -> MultiText</b>, dok je za uvodnu špicu korišten <b>Effects -> Toolbox -> Titles -> Clean and Simple</b>, nakon čega je dodan i glavni naslov efektom <b>Effects ->Toolbox -> Titles -> Text+</b>.  
                     </p>
                     <p class="odlomak">
-                        Za kraj, projekt je <b>eksportiran</b> (<i>eng. rendered</i>) u standardni video format, spreman za objavu.
+                        Nakon slaganja vizuala, uređen je zvuk. Na originalnoj audio traci s naracijom u postavkama je povećana glasnoća <b>Audio -> Volume</b>. 
+                        Zatim je dodan audio zapis za pozadinsku glazbu, čiji je <b>Volume</b> smanjen kako ne bi ometao naraciju. 
+                        Za postepeni završetak, na kraj glazbene trake dodan je efekt <b>Effects -> Toolbox -> Audio Transitions -> Cross Fade</b>.
+                    </p> 
+                    <p class="odlomak">
+                        Kao završni element, na kraj videa dodan je logo. Pomoću <b>Transform</b> opcija u <b>Inspectoru</b>, animiran je efekt zumiranja (<b>Zoom</b>). 
+                        Vrijednost je animirana od početne <b>0.1</b> do <b>1.0</b>, a zatim se smanjuje i zaustavlja na konačnoj vrijednosti <b>0.6</b>, čime je dovršena postprodukcija.
                     </p>
+                    
                 </section>
 
                 <div class="video-kontejner">
